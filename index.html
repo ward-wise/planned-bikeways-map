@@ -4,6 +4,9 @@
       <head>
         <meta charset="UTF-8"/>
         <title>Chicago 2024 Planned Bikeways | Ward Wise</title>
+        <link rel="shortcut icon" href="icon.png">
+        <meta name="description"
+          content="A map of Chicago's 2024 planned bikeways. Made by Ward Wise using Kepler.gl and CDOT data.">
 
         <!--Uber Font-->
         <link rel="stylesheet" href="https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/uber-fonts/4.0.0/superfine.css">
@@ -11,22 +14,22 @@
         <!--MapBox css-->
         <link href="https://unpkg.com/maplibre-gl@^3/dist/maplibre-gl.css" rel="stylesheet">
 
-        <!-— facebook open graph tags -->
+        <!-- facebook open graph tags -->
         <meta property="og:url" content="http://www.wardwisechicago.org"/>
         <meta property="og:title" content="Chicago 2024 Planned Bikeways" />
-        <meta property="og:description" content="A map of CDOT's 2024 Planned Bikeways. Made by Ward Wise using Kepler.gl." />
+        <meta property="og:description" content="A map of Chicago's 2024 planned biRKLS. Made by Ward Wise using Kepler.gl and CDOT data." />
         <meta property="og:site_name" content="wardwisechicago.org" />
         <meta property="og:image" content="upcoming-bikeways-map-cover-photo.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="800" />
 
-        <!-— twitter card tags -->
+        <!-- twitter card tags -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@openjsf">
         <meta name="twitter:creator" content="@openjsf">
         <meta name="twitter:title" content="Chicago 2024 Planned Bikeways">
-        <meta name="twitter:description" content="A map of CDOT's 2024 Planned Bikeways. Made by Ward Wise using Kepler.gl.">
+        <meta name="twitter:description" content="A map of Chicago's 2024 planned bikeways. Made by Ward Wise using Kepler.gl and CDOT data.">
         <meta name="twitter:image" content="upcoming-bikeways-map-cover-photo.png" />
 
         <!-- Load React/Redux -->
@@ -49,7 +52,6 @@
            * Provide your MapBox Token
            **/
           const MAPBOX_TOKEN = 'pk.eyJ1IjoidWNmLW1hcGJveCIsImEiOiJjbDBiYzlveHgwdnF0M2NtZzUzZWZuNWZ4In0.l9J8ptz3MKwaU9I4PtCcig';
-          const WARNING_MESSAGE = 'Please Provide a Mapbox Token in order to use Kepler.gl. Edit this file and fill out MAPBOX_TOKEN with your access key';
         </script>
 
         <!-- GA: Delete this as you wish, However to pat ourselves on the back, we only track anonymous pageview to understand how many people are using kepler.gl. -->
