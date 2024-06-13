@@ -86,7 +86,13 @@
               keplerGl: keplerGl.keplerGlReducer.initialState({
                 uiState: {
                   readOnly: urlParams.has('readOnly'),
-                  currentModal: null
+                  currentModal: null,
+                  mapControls: {
+                    mapLegend: {
+                      show: true,
+                      active: true
+                    },
+                  }
                 }
               })
             });
