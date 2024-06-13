@@ -79,12 +79,13 @@
           }
 
           /** STORE **/
+          const urlParams = new URLSearchParams(window.location.search)
           const reducers = (function createReducers(redux, keplerGl) {
             return redux.combineReducers({
               // mount keplerGl reducer
               keplerGl: keplerGl.keplerGlReducer.initialState({
                 uiState: {
-                  readOnly: false,
+                  readOnly: urlParams.has('readOnly'),
                   currentModal: null
                 }
               })
